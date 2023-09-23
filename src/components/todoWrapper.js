@@ -9,6 +9,8 @@ export const TodoWrapper = () => {
     const [todos,setTodos] = useState([])
     let tarefas = todos.length;
 
+    console.log(todos);
+
     let taskCompleta = todos.filter(todo => todo.completed === true);
 
     const addTodo = todo => {
