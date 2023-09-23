@@ -1,13 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root{
-  --corPrincipal: MidnightBlue;
-  --corSecundaria: RoyalBlue;
-  --cor1: #FFCE30;
-  --cor2: #0000FF;
-  --cor3: #E389B9;
-  --cor4: #746AB0;
-  --cor5: #288BA8;
+  --corPrincipal: #363636;
+  --corSecundaria: #A9A9A9;
+  --corVidro: #1C1C1C;
 }
 
 * {
@@ -35,7 +31,7 @@ h1 {
 }
 
 .TodoWrapper {
-  background: rgba(26, 26, 64, 0.8);
+  background: var(--corVidro);
   margin-top: 5rem;
   margin-bottom: 3rem;
   padding: 2rem;
@@ -51,7 +47,8 @@ h1 {
 .todo-input {
   outline: none;
   background: none;
-  border: 3px solid var(--corSecundaria);
+  border: 3px solid var(--corPrincipal);
+  border-radius: 5px 0 0 5px;
   padding: 0.5rem 1rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
@@ -64,11 +61,13 @@ h1 {
 }
 
 .todo-btn {
-  background: var(--corSecundaria);
+  background: var(--corPrincipal);
+  border-radius: 0 5px 5px 0;
   color: #fff;
   border: none;
   padding: 0.55rem;
   cursor: pointer;
+  border-left: solid 3px var(--corVidro);
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
