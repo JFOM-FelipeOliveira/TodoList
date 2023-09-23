@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+  --corPrincipal: MidnightBlue;
+  --corSecundaria: RoyalBlue;
+  --cor1: #FFCE30;
+  --cor2: #0000FF;
+  --cor3: #E389B9;
+  --cor4: #746AB0;
+  --cor5: #288BA8;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--corPrincipal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.TodoWrapper {
+  background: rgba(26, 26, 64, 0.8);
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.todo-input {
+  outline: none;
+  background: none;
+  border: 3px solid var(--corSecundaria);
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  color: #fff;
+}
+
+.todo-input::placeholder {
+  color: rgba(255,255,255, 0.6);
+}
+
+.todo-btn {
+  background: var(--corSecundaria);
+  color: #fff;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(230, 230, 230);
+  color: black;
+  padding: 0.65rem 1rem;
+  border-bottom: solid 2px black;
+  margin: 0;
+  cursor: pointer;
+}
+
+
+.TotalTarefas{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.completas{
+  color: #20ff00;
+}
+
+.todoCompleto{
+  display: none;
+}
+ 
+.completed {
+  color: #228B22;
+  text-decoration: line-through;
+}
+
+span {
+  padding: 3px;
+}
+
+.task{
+  margin-right: 15px;
+  text-align: start;
+  flex: 1;
+}
+
+.fa-trash {
+  margin-left: 0.5rem;
+  color: red;
+  padding: 1px;
+}
+
+.fa-pen-to-square{
+  color: var(--corPrincipal);
+  padding: 1px;
+  margin-right: 5px;
+}
+
+
+.check{
+  display: none;
+}
